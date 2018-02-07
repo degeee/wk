@@ -1,0 +1,2 @@
+[0207/123929:WARNING:raw_channel_win.cc(532)] WriteFile: A pipe bezárása folyamatban van. (0xE8)
+[0207/123929:ERROR:ipc_channel_win.cc(217)] pipe error: 109
