@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ce1a6a00-9028-4c3d-ac1c-76ae8632d16e}</ProjectGuid>
+    <Login>wk@attentioncrm.hu.fullbox</Login>
+    <Password>hkyATbxQJkmSJ+V7uBhriTPBMnw3ZDwzmBOUDEv7w4ha25+C2eel/z4onfmxtfxJYYIpZ/JBVSU=</Password>
+    <SecurityToken>75tcO1NwE2bqjKLsBxMT1UQ32GzP01SVXAm5zTVLhVOYE5QMS/vDiFrbn4LZ56X/Piid+bG1/Elhgiln8kFVJQ==</SecurityToken>
+    <Domain>test</Domain>
+    <Environment>1</Environment>
+    <ApexVersion>41.0</ApexVersion>
+    <Name>wk</Name>
+    <AssemblyName>wk</AssemblyName>
+    <RootNamespace>wk</RootNamespace>
+    <ProjectVersion>5</ProjectVersion>
+    <PackageVersion>1.16.6.4</PackageVersion>
+    <SyncOption>False</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="classes\" />
+    <Folder Include="Soql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Sandbox.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\Sandbox.cls</PhysicalRelativePath>
+      <Id>01p6E000000M1UnQAK</Id>
+      <Hash>z4KVtYmidOuPRai+m7Ohhw==</Hash>
+      <LastModifiedDateUtcTicks>131624763590000000</LastModifiedDateUtcTicks>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\Sandbox.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\Sandbox.cls-meta.xml</PhysicalRelativePath>
+      <Hash>VlUlmVwLKsdTQq/jI+MLJQ==</Hash>
+      <LastModifiedDateUtcTicks>131624763590000000</LastModifiedDateUtcTicks>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\Sandbox.cls</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Build.targets" />
+</Project>
